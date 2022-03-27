@@ -1,0 +1,29 @@
+{
+    "name": "kamil/recman",
+    "description": "simple php7.4 code demonstration app",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Recman\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "php": "^7.4",
+        "php-di/php-di": "^6.0",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --testsuite 'unit'"
+    }
+}
